@@ -34,6 +34,7 @@ jobs:
             pip install rasterio-1.2.1-cp39-cp39-win_amd64.whl
             pip install -r requirements.txt
             python setup.py install
+            pip install numpy --upgrade
 
         - name: Test and generate coverage report
           run: |
